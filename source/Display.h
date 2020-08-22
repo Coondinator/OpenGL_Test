@@ -21,7 +21,7 @@ class DisplayMode{
            ~DisplayMode(){};
 };
 
-class ContexAttri{
+/*class ContexAttri{
       private:
            int minor, major;
            bool bProfileCore;
@@ -32,7 +32,7 @@ class ContexAttri{
 
            void CoreMode (const bool& UsingCore){bProfileCore=UsingCore;};
 
-};
+};*/
 
 class Display{
       private:
@@ -42,22 +42,25 @@ class Display{
 
            int mWindows;
 
+
+
       public:
            Display():title(" "){};
              
            ~Display(){};
 
-           void create(ContexAttri attri){};
+           void create();
 
-           void update(){};
+           void update();
 
-           void destroy(){};
+           void destroy();
 
-           void setTitle(const char* _Title){};
+           void setTitle(const char* _Title);
 
       private:
 
-          void processEvent();     
+           void processEvent();
+
 
 };
 

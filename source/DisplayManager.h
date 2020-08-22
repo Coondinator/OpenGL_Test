@@ -8,22 +8,25 @@
 #include <GL/glext.h>
 #include "Display.h"
 
-class DisplayManger{
+class DisplayManager{
     
     private:
-
+           Display m_Display;
+    
     public:
-         DisplayManger(){};
+           DisplayManager(){std::cout<<"DisplayManager Created"<<std::endl;};
         
-         ~DisplayManger(){};
+           ~DisplayManager();
          
-         void createDisplay(){};
+           void createDisplay();
 
-         void updateDisplay(){};
-
-         void destroyDisplay(){};
+           void updateDisplay();
+           
+           void destroyDisplay();
          
 
 };
+
+
 
 #endif
